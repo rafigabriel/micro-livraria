@@ -8,6 +8,7 @@ app.use(cors());
 
 /**
  * Retorna a lista de produtos da loja via InventoryService
+ * 
  */
 app.get('/products', (req, res, next) => {
     inventory.SearchAllProducts(null, (err, data) => {
